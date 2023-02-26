@@ -1,5 +1,5 @@
-var player1 = prompt("What is your name?");
-var player2 = prompt("What is your name?");
+var player1 = prompt("What is first player name?");
+var player2 = prompt("What is second player name?");
 document.querySelector(".p1").innerHTML = player1;
 document.querySelector(".p2").innerHTML = player2;
 var randomNumber1 = Math.floor(Math.random()*6) +1;
