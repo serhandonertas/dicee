@@ -48,3 +48,6 @@ h2 {
   color: #fff;
   font-size: 3rem;
 }
+.reload:hover {
+  color: #4ECCA3;
+}
