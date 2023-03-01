@@ -1,5 +1,5 @@
-var player1 = prompt("What is your name?");
-var player2 = prompt("What is your name?");
+var player1 = prompt("What first is your name?");
+var player2 = prompt("What second is your name?");
 if (player1 = " "){
   var name1 = document.querySelector(".p1").innerHTML = "player1";
 } else{
