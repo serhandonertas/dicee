@@ -1,7 +1,17 @@
-var player1 = prompt("What is first player name?");
-var player2 = prompt("What is second player name?");
-document.querySelector(".p1").innerHTML = player1;
-document.querySelector(".p2").innerHTML = player2;
+var player1 = prompt("What is your name?");
+var player2 = prompt("What is your name?");
+if (player1 = " "){
+  var name1 = document.querySelector(".p1").innerHTML = "player1";
+} else{
+  var name1 = document.querySelector(".p1").innerHTML = player1;
+}
+if (player2 = " "){
+  var name2 = document.querySelector(".p2").innerHTML = "player2";
+} else{
+  var name2 = document.querySelector(".p2").innerHTML = player2;
+}
+
+
 var randomNumber1 = Math.floor(Math.random()*6) +1;
 var randomNumber2 = Math.floor(Math.random()*6) +1;
 
@@ -12,11 +22,14 @@ var number1 = document.querySelector(".img1").setAttribute("src", imageNumber1);
 var number2 = document.querySelector(".img2").setAttribute("src", imageNumber2);
 
 if (randomNumber1 > randomNumber2){
-  document.querySelector("h1").innerHTML = player1 + " Wins🚩";
+  document.querySelector("h1").innerHTML = name1 + " Wins🚩";
 }
 else if (randomNumber1 < randomNumber2){
-  document.querySelector("h1").innerHTML = player2 + " Wins🚩";
+  document.querySelector("h1").innerHTML = name2 + " Wins🚩";
 }
 else{
   document.querySelector("h1").innerHTML = "Draw!";
 }
+document.querySelector(".reload").addEventListener("click", function(){
+  window.location.reload();
+});
